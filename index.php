@@ -4,11 +4,13 @@ function displayGreeting($hourofday) {
     print ($hourofday);
     $hourofday = 11;
     if ($hourofday > 6 and $hourofday < 12)
-        print"<p>Good morning";
+        print"Good morning";
     if ($hourofday > 12 and $hourofday < 17)
-        print"<p>Good afternoon";
+        print"Good afternoon";
     if ($hourofday > 17 and $hourofday < 24)
-        print"<p>Good night";
+        print"Good night";
 }
-print displayGreeting($hourofday);
+print displayGreeting("<p".$hourofday."<p>");
+print ("Did this work? Yes!");
+
 ?>
